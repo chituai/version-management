@@ -42,12 +42,12 @@ description: 在 AI 修改本地已有文件前后分别记录版本，方便查
 
 ## 记录当前版本
 
-从将要修改的项目目录运行本 skill 自带脚本。脚本路径取决于当前 agent 如何安装 skill：使用实际安装位置里的 `version-management/scripts/checkpoint.sh`，不要假设固定目录。
+从将要修改的项目目录运行本 skill 自带脚本。脚本路径取决于当前 agent 如何安装 skill：使用实际安装位置里的 `scripts/checkpoint.sh`，不要假设固定目录。
 
 如果正在本仓库中使用，可以运行：
 
 ```bash
-bash version-management/scripts/checkpoint.sh
+bash scripts/checkpoint.sh
 ```
 
 如果脚本提示当前文件夹还没有版本记录，先问用户：
@@ -57,7 +57,7 @@ bash version-management/scripts/checkpoint.sh
 只有用户同意后，才能运行：
 
 ```bash
-bash version-management/scripts/checkpoint.sh --init-approved
+bash scripts/checkpoint.sh --init-approved
 ```
 
 如果不是在本仓库中使用，把上面的脚本路径替换为当前安装位置中的脚本路径。
@@ -75,9 +75,9 @@ bash version-management/scripts/checkpoint.sh --init-approved
 示例：
 
 ```bash
-bash version-management/scripts/checkpoint.sh --message "AI 修改前记录"
+bash scripts/checkpoint.sh --message "AI 修改前记录"
 # 执行文件修改
-bash version-management/scripts/checkpoint.sh --message "AI 修改后记录"
+bash scripts/checkpoint.sh --message "AI 修改后记录"
 ```
 
 如果不是在本仓库中使用，把示例里的脚本路径替换为实际安装路径。即使很多轮对话后继续修改同一个已有文件，也要在每一轮实际修改前后各记录一次。

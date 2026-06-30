@@ -21,7 +21,7 @@
 把本项目的 GitHub 链接发给本地 agent，让它帮你安装：
 
 ```text
-请从这个 GitHub 仓库安装本地版本管理 skill：https://github.com/chituai/version-management。安装后，以后修改本地已有文件前先记录一次，改完后再记录一次；如果只是新建文件，不需要记录版本。
+请从这个 GitHub 仓库根目录安装本地版本管理 skill：https://github.com/chituai/version-management。skill 名称是 version-management；如果安装工具需要填写路径，请使用仓库根目录 `.`。安装后，以后修改本地已有文件前先记录一次，改完后再记录一次；如果只是新建文件，不需要记录版本。
 ```
 
 ## 如果电脑还没装 git
