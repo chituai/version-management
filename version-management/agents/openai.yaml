@@ -1,0 +1,4 @@
+interface:
+  display_name: "本地版本管理"
+  short_description: "让 AI 修改已有文件前后记录本地版本，方便查看变化和回退"
+  default_prompt: "使用 $version-management，在修改已有文件前先记录一次，改完后再记录一次；新建文件不用触发。"
